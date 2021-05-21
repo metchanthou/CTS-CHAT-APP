@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------part1--------------- */
+
+.part1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+#username {
+    width: 300px;
+    border: none;
+    height: 8vh;
+}
+
+#create {
+    border: none;
+    color: #1597bb;
+    background: none;
+}
+
+.button1 {
+    margin-top: 2%;
+}
+
+#back {
+    background: gray;
+    width: 20%;
+    height: 5vh;
+    border: none;
+}
+
+#next {
+    background: #1597bb;
+    width: 20%;
+    height: 5vh;
+    border: none;
+
+}
+
+/* -----------------part2----------------- */
+.part2 {
+    display: none;
+    margin-top: 5%;
+}
+
+.page1,
+.page2 {
+    background: #1597bb;
+    padding: 4%;
+}
+
+.input1{
+    margin-top: 5%;
+}
+#create-new-account {
+    font-size: 70px;
+}
+.name,
+.email,
+.password {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#first-name,
+#last-name,
+#email,
+#repeat,
+#newpass,
+#comfirmpas {
+    width: 350px;
+    height: 5vh;
+}
+
+#note1,
+#note2  {
+    margin-left: 16%;
+    color: white;
+}
+
+h4 {
+    margin-left: 43%;
+}
+#profile {
+    margin-left: 19%;
+    font-size: 30px;
+}
+
+.page2 {
+    margin: auto;
+}
+
+#note2 {
+    margin-left: 16%;
+}
+
+.input2 {
+    margin-left: 16%;
+}
+
+
+#month{
+    width: 20%;
+    height: 5vh;
+    margin-left: 20%;    
+}
+
+#gender,
+#country,
+#language{
+    width: 28%;
+    height: 5vh;
+    margin-left: 20%; 
+}
+
+#date,
+#year {
+    width: 8%;
+    height: 5vh;
+}
+.new {
+    margin-top: 3%;
+    margin-left: 33%;
+
+}
+#sign-up{
+    border: none;
+    background: #8ab6d6;
+    width: 150px;
+    height: 40px;
+    background: wheat;
+}
+#not {
+    border: none;
+    background: #8ab6d6;
+    width: 150px;
+    height: 40px;
+    background: coral;
+    
+}
+ 
