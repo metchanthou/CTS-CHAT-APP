@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTS</title>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js" defer></script>
 
@@ -20,7 +20,6 @@
 <body>
 
     <div class="container">
-
         <div class="part1">
             <img src="img/p1.png" alt="" width="20%">      
             <div class="inform">
@@ -40,10 +39,9 @@
             </div>
         </div>
 
-
         <div class="part2">
             <div class="page1">
-                <i class="fa fa-skype" style="font-size:120px;color:white"></i>
+                <i id="logo" style="font-size:90px; color:white" class="fa fa-skype" >kype</i>
                 <h4 id="creat-new-account">Create New Account</h4>
                 <form class="input1">
                     <div class="name">
@@ -83,7 +81,7 @@
             <p id="profile">Profile information</p>
 
             <div class="page2">
-                <p id="note2">Note: Anyone on Skype can see yur profile information.</p>
+                <p id="note2">Note: Anyone on Skype can see your profile information.</p>
                 <form class="input2">
                    <h5 id="brirth">Your date of brirth:</h5>
                    <select name="month" id="month" type="month">
@@ -134,10 +132,13 @@
         </div>
 
         <div class="part3">
-            <p></p>
-            <textarea name="sms" id="message" cols="50" rows="1" placeholder="Type a message"></textarea>
-            <i style="font-size:30px; color: red;" class="far">&#xf118;</i>
-            <i style="font-size:30px; color:#1597BB85 ;" class="fa">&#xf1d8;</i>
+            <div class="resive"></div>
+            <div class="send">
+                <i id="sticker" style="font-size:40px; color: #005792;" class="material-icons">&#xe815;</i>
+                <i id="camera" style="font-size:40px; color: #005792;" class="material-icons">&#xe3af;</i>
+                <textarea name="sms" id="messages" cols="50" rows="2" placeholder="Type a message"></textarea>
+                <i id="enter" style="font-size:40px; color: #005792;"  class="material-icons">&#xe163;</i>
+            </div>
         </div>
 
     </div>
