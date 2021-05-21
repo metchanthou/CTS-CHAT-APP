@@ -1,345 +1,52 @@
-[
-    {
-      "firstName": "Channary",
-      "lastName": "Pha",
-      "favoriteSport": "soccer",
-      "favoriteteacher": "rady",
-      "favoriteCountry": "Albania"
+[{
+        "firstName": "Channary",
+        "lastName": "Pha",
+        "password": "12345"
     },
     {
-      "firstName": "Chanry",
-      "lastName": "Chhoy",
-      "favoriteSport": "basketball",
-      "favoriteteacher": "ronan",
-      "favoriteCountry": "Algeria"
+        "firstName": "Chanry",
+        "lastName": "Chhoy",
+        "password": "14245"
     },
     {
-      "firstName": "Kunthy",
-      "lastName": "Sen",
-      "favoriteSport": "tennis",
-      "favoriteteacher": "him",
-      "favoriteCountry": "Andorra"
+        "firstName": "Kunthy",
+        "lastName": "Sen",
+        "password": "74643"
     },
     {
-      "firstName": "Sinet",
-      "lastName": "Sem",
-      "favoriteSport": "baseball",
-      "favoriteteacher": "jonathan",
-      "favoriteCountry": "Angola"
+        "firstName": "Sinet",
+        "lastName": "Sem",
+        "password": "25244"
     },
     {
-      "firstName": "Somphors",
-      "lastName": "Ngoun",
-      "favoriteSport": "golf",
-      "favoriteteacher": "clement",
-      "favoriteCountry": "Angola"
+        "firstName": "Somphors",
+        "lastName": "Ngoun",
+        "password": "24467"
     },
     {
-      "firstName": "Sophanna",
-      "lastName": "Chhorn",
-      "favoriteSport": "running",
-      "favoriteteacher": "edouard",
-      "favoriteCountry": "Argentina"
+        "firstName": "Sophanna",
+        "lastName": "Chhorn",
+        "password": "24256"
+
     },
     {
-      "firstName": "Sophea",
-      "lastName": "Suon",
-      "favoriteSport": "volleyball",
-      "favoriteteacher": "seiha",
-      "favoriteCountry": "Armenia"
+        "firstName": "Sophea",
+        "lastName": "Suon",
+        "password": "96786"
     },
     {
-      "firstName": "Srey Aem",
-      "lastName": "Hourn",
-      "favoriteSport": "badminton",
-      "favoriteteacher": "channak",
-      "favoriteCountry": "Australia"
+        "firstName": "Srey Aem",
+        "lastName": "Hourn",
+        "password": "13096"
     },
     {
-      "firstName": "Sreyngit",
-      "lastName": "Doeurm",
-      "favoriteSport": "swimming",
-      "favoriteteacher": "all",
-      "favoriteCountry": "Austria"
+        "firstName": "Sreyngit",
+        "lastName": "Doeurm",
+        "password": "53428"
     },
     {
-      "firstName": "Vicheka",
-      "lastName": "Lo",
-      "favoriteSport": "boxing",
-      "favoriteteacher": "aerobic teacher",
-      "favoriteCountry": "Azerbaijan"
-    },
-    {
-      "firstName": "Vun",
-      "lastName": "Yin",
-      "favoriteSport": "table tennis",
-      "favoriteteacher": "rady",
-      "favoriteCountry": "Bahamas"
-    },
-    {
-      "firstName": "Chanthea",
-      "lastName": "Phon",
-      "favoriteSport": "skiing",
-      "favoriteteacher": "ronan",
-      "favoriteCountry": "Bahrain"
-    },
-    {
-      "firstName": "Chanthou",
-      "lastName": "Met",
-      "favoriteSport": "ice skating",
-      "favoriteteacher": "him",
-      "favoriteCountry": "Bangladesh"
-    },
-    {
-      "firstName": "Molika",
-      "lastName": "Heng",
-      "favoriteSport": "roller skating",
-      "favoriteteacher": "jonathan",
-      "favoriteCountry": "Barbados"
-    },
-    {
-      "firstName": "Nimout",
-      "lastName": "Mang",
-      "favoriteSport": "cricket",
-      "favoriteteacher": "clement",
-      "favoriteCountry": "Belarus"
-    },
-    {
-      "firstName": "Sara",
-      "lastName": "Vey",
-      "favoriteSport": "rugby",
-      "favoriteteacher": "edouard",
-      "favoriteCountry": "Belgium"
-    },
-    {
-      "firstName": "Sopheak",
-      "lastName": "Von",
-      "favoriteSport": "pool",
-      "favoriteteacher": "seiha",
-      "favoriteCountry": "Belize"
-    },
-    {
-      "firstName": "Sophorn",
-      "lastName": "Eng",
-      "favoriteSport": "darts",
-      "favoriteteacher": "channak",
-      "favoriteCountry": "Benin"
-    },
-    {
-      "firstName": "Sothean",
-      "lastName": "Choun",
-      "favoriteSport": "football",
-      "favoriteteacher": "all",
-      "favoriteCountry": "Bhutan"
-    },
-    {
-      "firstName": "Srey Hieb",
-      "lastName": "Dy",
-      "favoriteSport": "bowling",
-      "favoriteteacher": "aerobic teacher",
-      "favoriteCountry": "Bolivia"
-    },
-    {
-      "firstName": "Sreyhon",
-      "lastName": "Khim",
-      "favoriteSport": "ice hockey",
-      "favoriteteacher": "rady",
-      "favoriteCountry": "Bolivia"
-    },
-    {
-      "firstName": "Sreynot",
-      "lastName": "Bou",
-      "favoriteSport": "surfing",
-      "favoriteteacher": "ronan",
-      "favoriteCountry": "Botswana"
-    },
-    {
-      "firstName": "Sreypich",
-      "lastName": "Heng",
-      "favoriteSport": "karate",
-      "favoriteteacher": "him",
-      "favoriteCountry": "Brazil"
-    },
-    {
-      "firstName": "Sreytouch",
-      "lastName": "Moch",
-      "favoriteSport": "horse racing",
-      "favoriteteacher": "jonathan",
-      "favoriteCountry": "Brunei"
-    },
-    {
-      "firstName": "Vouleak",
-      "lastName": "Vat",
-      "favoriteSport": "snowboarding",
-      "favoriteteacher": "clement",
-      "favoriteCountry": "Bulgaria"
-    },
-    {
-      "firstName": "Chanthy",
-      "lastName": "Tha",
-      "favoriteSport": "skateboarding",
-      "favoriteteacher": "edouard",
-      "favoriteCountry": "Burkina Faso"
-    },
-    {
-      "firstName": "Chum",
-      "lastName": "Yoeurn",
-      "favoriteSport": "cycling",
-      "favoriteteacher": "seiha",
-      "favoriteCountry": "Burundi"
-    },
-    {
-      "firstName": "Koem Sak",
-      "lastName": "Mean",
-      "favoriteSport": "archery",
-      "favoriteteacher": "channak",
-      "favoriteCountry": "C�te d'Ivoire"
-    },
-    {
-      "firstName": "Lyden",
-      "lastName": "Chai",
-      "favoriteSport": "fishing",
-      "favoriteteacher": "all",
-      "favoriteCountry": "Cabo Verde"
-    },
-    {
-      "firstName": "Lyheang",
-      "lastName": "Chhem",
-      "favoriteSport": "gymnastics",
-      "favoriteteacher": "aerobic teacher",
-      "favoriteCountry": "Cambodia"
-    },
-    {
-      "firstName": "Lyhor",
-      "lastName": "Ngorn",
-      "favoriteSport": "figure skating",
-      "favoriteteacher": "rady",
-      "favoriteCountry": "Cameroon"
-    },
-    {
-      "firstName": "Meng Hour",
-      "lastName": "Oeung",
-      "favoriteSport": "rock climbing",
-      "favoriteteacher": "ronan",
-      "favoriteCountry": "Canada"
-    },
-    {
-      "firstName": "Mengheang",
-      "lastName": "Pho",
-      "favoriteSport": "sumo wrestling",
-      "favoriteteacher": "him",
-      "favoriteCountry": "Canada"
-    },
-    {
-      "firstName": "Phally",
-      "lastName": "Chun",
-      "favoriteSport": "taekwondo",
-      "favoriteteacher": "jonathan",
-      "favoriteCountry": "Chad"
-    },
-    {
-      "firstName": "Pros",
-      "lastName": "Nob",
-      "favoriteSport": "fencing",
-      "favoriteteacher": "clement",
-      "favoriteCountry": "Chile"
-    },
-    {
-      "firstName": "Thon",
-      "lastName": "Theng",
-      "favoriteSport": "water skiing",
-      "favoriteteacher": "edouard",
-      "favoriteCountry": "China"
-    },
-    {
-      "firstName": "Vantheav",
-      "lastName": "Thav",
-      "favoriteSport": "jet skiing",
-      "favoriteteacher": "seiha",
-      "favoriteCountry": "Colombia"
-    },
-    {
-      "firstName": "Vuthy",
-      "lastName": "Yib",
-      "favoriteSport": "weight lifting",
-      "favoriteteacher": "channak",
-      "favoriteCountry": "Comoros"
-    },
-    {
-      "firstName": "Bunsal",
-      "lastName": "Hul",
-      "favoriteSport": "scuba diving",
-      "favoriteteacher": "all",
-      "favoriteCountry": "Costa Rica"
-    },
-    {
-      "firstName": "Dyna",
-      "lastName": "Chhan",
-      "favoriteSport": "judo",
-      "favoriteteacher": "aerobic teacher",
-      "favoriteCountry": "Costa Rica"
-    },
-    {
-      "firstName": "Lanh",
-      "lastName": "Phalla",
-      "favoriteSport": "wind surfing",
-      "favoriteteacher": "rady",
-      "favoriteCountry": "Croatia"
-    },
-    {
-      "firstName": "Lyhuoy",
-      "lastName": "In",
-      "favoriteSport": "kickboxing",
-      "favoriteteacher": "ronan",
-      "favoriteCountry": "Cuba"
-    },
-    {
-      "firstName": "Phearak",
-      "lastName": "Eng",
-      "favoriteSport": "sky diving",
-      "favoriteteacher": "him",
-      "favoriteCountry": "Cyprus"
-    },
-    {
-      "firstName": "Siny",
-      "lastName": "Sen",
-      "favoriteSport": "hang gliding",
-      "favoriteteacher": "jonathan",
-      "favoriteCountry": "Cyprus"
-    },
-    {
-      "firstName": "Som",
-      "lastName": "Chhorn",
-      "favoriteSport": "bungee jumping",
-      "favoriteteacher": "clement",
-      "favoriteCountry": "Denmark"
-    },
-    {
-      "firstName": "Som Oun",
-      "lastName": "Om",
-      "favoriteSport": "jet skiing",
-      "favoriteteacher": "edouard",
-      "favoriteCountry": "Denmark"
-    },
-    {
-      "firstName": "Sophanna",
-      "lastName": "Mey",
-      "favoriteSport": "weight lifting",
-      "favoriteteacher": "seiha",
-      "favoriteCountry": "Djibouti"
-    },
-    {
-      "firstName": "Sothoun",
-      "lastName": "Phauv",
-      "favoriteSport": "scuba diving",
-      "favoriteteacher": "channak",
-      "favoriteCountry": "Dominica"
-    },
-    {
-      "firstName": "Thin",
-      "lastName": "Chrang",
-      "favoriteSport": "jet skiing",
-      "favoriteteacher": "all",
-      "favoriteCountry": "Dominican Republic"
+        "firstName": "Vicheka",
+        "lastName": "Lo",
+        "password": "45487"
     }
-  ]
+]
