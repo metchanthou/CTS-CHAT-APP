@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+// const getListname = (JSON.parse(fs.readFileSync('./username.json')));
+
+
 app.listen(process.env.PORT || 5000, () => console.log("Server running..."));
 
 app.use(express.json());

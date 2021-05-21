@@ -25,17 +25,27 @@ function signbutton (event) {
 }
 
 function requestMessage (res) {
+
     let data = res.data;
     console.log(data)
     const resiveChat = document.querySelector(".resive");
+    
 
-    const newResive = document.createElement("div")
+    if (resiveChat !==null) {
+        resiveChat.remove();
+    }
+
+    const newResive = document.createElement("div");
     newResive.classList.add("resive");
 
     for (let sms of data) {
+        const resultChat = document.querySelector(".result");
         const p = document.createElement("p");
         p.textContent = sms.name+ ": " + sms.message;
-        resiveChat.appendChild(p);
+        newResive.appendChild(p);
+        resultChat.appendChild(newResive);
+        console.log(result);
+        
     }
 }
 
@@ -71,11 +81,9 @@ const btnCreate = document.querySelector("#create");
 const btnNotYet = document.querySelector("#not");
 const btnSend = document.querySelector("#enter");
 const btnSign = document.querySelector("#sign-up");
-const btnNext = document.querySelector("#next");
 
 
 btnCreate.addEventListener("click", closePart1);
 btnNotYet.addEventListener("click", notYet);
 btnSend.addEventListener("click", newMessage);
 btnSign.addEventListener("click", signbutton);
-btnNext.addEventListener("click", nextButton);
