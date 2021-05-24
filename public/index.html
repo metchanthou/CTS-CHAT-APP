@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="part1">
             <img src="img/p1.png" alt="" width="20%">      
@@ -43,27 +42,27 @@
         </div>
         <div class="part2">
             <div class="page1">
-                <i id="logo" style="font-size:90px; color:white" class="fa fa-skype" >kype</i>
-                <h4 id="creat-new-account">Create New Account</h4>
+                <i id="logo" style="font-size:50px; color:#8ab6d6" class="fa fa-skype" >kype</i>
+                <h5 id="creat-new-account">Create New Account</h5>
                 <form class="input1">
                     <div class="name">
                         <div class="name1">
                             <h3>First name*:</h3>
-                            <input type="text" id="first-name" placeholder="Firstname">
+                            <input type="text" id="first-name" placeholder="Firstname" required>
                         </div>
                         <div class="name2">
                             <h3>Last name*: </h3>
-                            <input type="text" id="last-name" placeholder="Lastname">
+                            <input type="text" id="last-name" placeholder="Lastname" required>
                         </div>
                     </div>
                     <div class="email">
                         <div class="email1">
                             <h3>Email address*:</h3>
-                            <input type="email" id="email" placeholder="Email">
+                            <input type="email" id="email" placeholder="Email" required>
                         </div>
                         <div class="email2">
                             <h3>Comfirm email address*:</h3>
-                            <input type="email" id="repeat" placeholder="Comfirm email"><br>
+                            <input type="email" id="repeat" placeholder="Comfirm email" required><br>
                         </div>
                     </div>
                     <div class="password">
@@ -73,56 +72,12 @@
                         </div>
                         <div class="comfirmpass">
                             <h3>Comfirm password</h3>
-                            <input type="password" id="comfirmpas" placeholder="Comfirm password">
+                            <input type="password" id="comfirmpass" placeholder="Comfirm password">
                         </div>
                     </div>
                 </form>
                 <p id="note1">Note: no-one can see your email address.</p>
             </div>
-            <p id="profile">Profile information</p>
-            <div class="page2">
-                <p id="note2">Note: Anyone on Skype can see your profile information.</p>
-                <form class="input2">
-                   <h5 id="brirth">Your date of brirth:</h5>
-                   <select name="month" id="month" type="month">
-                       <option value="month">Month</option>
-                       <option value="january">January</option>
-                       <option value="february">february</option>
-                       <option value="march">March</option>
-                       <option value="april">April</option>
-                       <option value="may">may</option>
-                       <option value="june">June</option>
-                       <option value="july">july</option>
-                       <option value="August">August</option>
-                       <option value="september">September</option>
-                       <option value="october">October</option>
-                       <option value="november">November</option>
-                       <option value="december">December</option>
-                   </select>
-                   <input type="number" id="date" placeholder="Date">
-                   <input type="number" id="year" placeholder="Years">
-                   <h5>Gender:</h5>
-                   <select name="gender" id="gender">
-                       <option value="gender">Gender</option>
-                       <option value="male">Male</option>
-                       <option value="female">Femal</option>
-                       <option value="other">Other</option>
-                   </select>
-                   <h5>Country/ Region*:</h5>
-                   <select name="country" id="gender">
-                        <option value="cambodia">Cambodia</option>
-                        <option value="singapore">Singapore</option>
-                        <option value="korea">Korea</option>
-                        <option value="usa">USA</option>
-                        <option value="thailand">Thailand</option>
-                    </select>
-                    <h5>Language*:</h5>
-                    <select name="language" id="language">
-                        <option value="english">English</option>
-                        <option value="english">English(United States)</option>
-                        <option value="english">English(United Kingdom)</option>
-                    </select>
-                </form>
                 <div class="new">
                     <button id="not">Not yet?</button>
                     <button id="sign-up">Sign Up</button>
@@ -135,7 +90,7 @@
                 <div class="cover">
                     <div class="p1">
                         <img src="img/2.jpg" id="yourpic" width="25%" height="25%">
-                        <h5>Chanthou Met</h5>
+                        <h5 id="personal">Badboy</h5>
                     </div>
                     <i class="material-icons" id="sitting" style="font-size:40px;color:#393e46">more_horiz</i>
                 </div>
@@ -157,37 +112,18 @@
                     <ul>
                         <li>
                             <div class="textname">
-                                <span id="label">C</span>
+                                <span id="label">S</span>
                             </div>
                             <div class="inform">
-                                <span id="name">sophorn</span><br>
-                                <span id="mess">Hello! how are you doing?</span>
+                                <span id="name">Sophorn</span><br>
+                                <span id="mess">Hello!</span>
                             </div>
                         </li>
-                        <li>
-                            <div class="textname">
-                                <span id="label">C</span>
-                            </div>
-                            <div class="inform">
-                                <span id="name">nimout</span><br>
-                                <span id="mess">Hello! how are you doing?</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="textname">
-                                <span id="label">C</span>
-                            </div>
-                            <div class="inform">
-                                <span id="name">chanry</span><br>
-                                <span id="mess">Hello! how are you doing?</span>
-                            </div>
-                        </li>
-                        
                     </ul>
                 </div>
             </div>
             <div class="page4">
-                <div class="background">
+                <div class="background" >
                     <h2>Soporn</h2>
                     <div class="icon">
                         <i class="material-icons" style="font-size:35px;color:#005792">switch_video</i>
@@ -208,9 +144,131 @@
                     <i id="enter" style="font-size:40px; color: #005792;"  class="material-icons">&#xe163;</i>
                 </div>
             </div>
+            <div class="page5">
+                <i class="material-icons" style="font-size:48px;color:red">airplay</i>
+            </div>
         </div>
 
     </div>
+    <nav>
+        <p style="font-family: Segoe UI Emoji; font-size: 1.5em">
+            😀
+            😃
+            😄
+            😁
+            😆
+            😅
+            😂
+            🤣
+            🥲
+            ☺️
+            😊
+            😇
+            🙂
+            🙃
+            😉
+            😌
+            😍
+            🥰
+            😘
+            😗
+            😙
+            😚
+            😋
+            😛
+            😝
+            😜
+            🤪
+            🤨
+            🧐
+            🤓
+            😎
+            🥸
+            🤩
+            🥳
+            😏
+            😒
+            😞
+            😔
+            😟
+            😕
+            🙁
+            ☹️
+            😣
+            😖
+            😫
+            😩
+            🥺
+            😢
+            😭
+            😤
+            😠
+            😡
+            🤬
+            🤯
+            😳
+            🥵
+            🥶
+            😱
+            😨
+            😰
+            😥
+            😓
+            🤗
+            🤔
+            🤭
+            🤫
+            🤥
+            😶
+            😐
+            😑
+            😬
+            🙄
+            😯
+            😦
+            😧
+            😮
+            😲
+            🥱
+            😴
+            🤤
+            😪
+            😵
+            🤐
+            🥴
+            🤢
+            🤮
+            🤧
+            😷
+            🤒
+            🤕
+            🤑
+            🤠
+            😈
+            👿
+            👹
+            👺
+            🤡
+            💩
+            👻
+            💀
+            ☠️
+            👽
+            👾
+            🤖
+            🎃
+            😺
+            😸
+            😹
+            😻
+            😼
+            😽
+            🙀
+            😿
+            😾
+            </p>
+            
+    </nav>
 </body>
 
 </html>

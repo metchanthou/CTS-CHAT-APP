@@ -10,10 +10,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
-    margin-bottom: 30px;
-    display: none;
-    
-    
+    margin-bottom: 30px;   
     
 }
 
@@ -54,23 +51,19 @@ body {
     display: none;
     margin: auto;
     width: 45%;
-    border: 3px solid #1597bb;
+    border: 3px solid #005792;
     padding: 10px;
     display: none;
 }
 
-.page1,
-.page2 {
-    background: #1597bb;
-    
-}
+
 #logo{
-    margin-left: 25%;
+    margin-left: 40%;
 }
 .input1{
     margin-top: 5%;
 }
-h4 {
+h5 {
     text-align: center;
     font-size: 30px;
 }
@@ -87,47 +80,18 @@ h4 {
 #email,
 #repeat,
 #newpass,
-#comfirmpas {
+#comfirmpass {
     width: 250px;
     height: 5vh;
 }
 
-#note1,
-#note2  {
+#note1 {
     color: rgb(105, 54, 54);
     margin-left: 5%;
 }
 
 
-#profile {
-    font-size: 30px;
-}
 
-.input2 {
-    margin-left: 5%;
-}
-
-
-#month{
-    width: 20%;
-    height: 5vh;
-    margin-left: 20%;    
-}
-
-#gender,
-#country,
-#language,
-#month{
-    width: 35%;
-    height: 5vh;
-    margin-left: 25%; 
-}
-
-#date,
-#year {
-    width: 10%;
-    height: 4vh;
-}
 .new {
     margin-top: 5%;
     margin-left: 5%;
@@ -150,9 +114,9 @@ h4 {
     
 }
  /* -----------------part3-------------- */
-/* .part3 {
+.part3 {
     display: none;
-} */
+}
 
 .page3 {
     height: 100%;
@@ -188,7 +152,7 @@ h5 {
 }
 
 .search-container {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 4%;
 }
 
@@ -209,7 +173,6 @@ h5 {
 .button {
     display: flex;
     justify-content: space-evenly;
-    padding: 5px;  
     
 }
 
@@ -218,15 +181,18 @@ h5 {
     width: 67%;
     padding: 20px; 
     float: right;
-    position: fixed;
-    z-index: 1;
+    /* position: fixed; */
+    /* z-index: 1;
     top: 0;
-    left: 0;
-    overflow-x: hidden;
+    left: 0; */
     margin-left: 30%;
-    
-
  }
+
+ .background {
+    display: flex;
+}
+
+ 
 
 #sticker,
 #camera,
@@ -239,7 +205,7 @@ h5 {
 }
 
 .send {
-  margin-top: 48%;  
+  margin-top: 40%;  
 } 
 
 .lists {
@@ -272,6 +238,7 @@ li {
 }
 
 .inform {
+    margin-top: 5px;
     margin-left: 2%;
 }
 #name {
@@ -283,9 +250,7 @@ li {
     color: #9096a7;
 }
 
-.ul {
-    float: right;
-}
+
 
 .avatar,
 #yourpic {
@@ -294,10 +259,6 @@ li {
     height: 50px;
     border-radius: 50%;
   }
-
-.background {
-    display: flex;
-}
 
 h5 {
     margin-top: 2%;
@@ -312,8 +273,10 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-
-
+nav{
+    display: none;
+}
+.emoji{font-family:segoe ui emoji;font-size:"1.5em"}
 
 
 
