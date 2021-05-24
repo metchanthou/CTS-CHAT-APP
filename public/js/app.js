@@ -29,7 +29,7 @@ function requestMessage (res) {
     
     if (resiveChat !==null) {
         resiveChat.remove();
-    }
+    };
 
     const newResive = document.createElement("div");
     newResive.classList.add("resive");
@@ -61,10 +61,9 @@ function requestMessage (res) {
 //         }) 
 // };
 
-
 function newMessage(event) {
     const inputMessage = document.querySelector("#messages");
-    
+    let number = 7;
 
     let addMessage = {
         id: number,
@@ -94,18 +93,14 @@ const getText = document.querySelector("#text");
 const getusername = document.querySelector("#username");
 const getpassword = document.querySelector("#yourpassword");
 
-
-
-
 const btnCreate = document.querySelector("#create");
 const btnNotYet = document.querySelector("#not");
 const btnSend = document.querySelector("#enter");
 const btnSign = document.querySelector("#sign-up");
-const btnNext = document.querySelector("#next");
-
+// const btnNext = document.querySelector("#next");
 
 btnCreate.addEventListener("click", closePart1);
 btnNotYet.addEventListener("click", notYet);
 btnSend.addEventListener("click", newMessage);
 btnSign.addEventListener("click", signButton);
-btnNext.addEventListener("click", nextButton);
+// btnNext.addEventListener("click", nextButton);

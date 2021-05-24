@@ -11,6 +11,7 @@ body {
     justify-content: space-evenly;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: none;
     
     
     
@@ -149,9 +150,9 @@ h4 {
     
 }
  /* -----------------part3-------------- */
-.part3 {
+/* .part3 {
     display: none;
-}
+} */
 
 .page3 {
     height: 100%;
@@ -212,21 +213,18 @@ h5 {
     
 }
 
-.resive {
-    padding:15px 15px 250px;
-    font-size:30px;
-    margin-top:30px;
-    
-  }
-
 .page4 {
     margin: auto;
-    width: 68%;
-    border: 3px solid #1597bb;
-    border-left: none;
-    padding: 10px; 
+    width: 67%;
+    padding: 20px; 
     float: right;
-    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    margin-left: 30%;
+    
 
  }
 
@@ -241,7 +239,7 @@ h5 {
 }
 
 .send {
-  margin-top: 25%;  
+  margin-top: 48%;  
 } 
 
 .lists {
@@ -255,6 +253,7 @@ ul {
 li {
     display: flex;
     padding: 8px;
+    
 
 }
 .textname {
@@ -284,7 +283,35 @@ li {
     color: #9096a7;
 }
 
+.ul {
+    float: right;
+}
 
+.avatar,
+#yourpic {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+.background {
+    display: flex;
+}
+
+h5 {
+    margin-top: 2%;
+}
+
+h2 {
+    margin-top: -2px;
+    color: #005792;
+}
+
+.background {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 

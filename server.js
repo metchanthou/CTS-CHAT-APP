@@ -17,7 +17,7 @@ let messageData = [
 ];
 
 let allUsername = [
-                {"username": "Channary", "password": 1010},
+                {"username": "Channary", "password": 0000},
                 {"username": "Chanry", "password": 1111},
                 {"username": "Kunthy", "password": 2222},
                 {"username": "Sinet", "password": 3333},
