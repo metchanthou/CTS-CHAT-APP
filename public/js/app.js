@@ -51,6 +51,7 @@ function requestMessage (res) {
     for (let sms of data) {
         const resultChat = document.querySelector(".result");
         const p = document.createElement("p");
+        p.setAttribute("id", "p-mess")
         p.textContent = sms.name+ ": " + sms.message;
         newResive.appendChild(p);
         resultChat.appendChild(newResive);
@@ -94,7 +95,7 @@ function newMessage(event) {
     let number = 7; 
     let addMessage = {
         id: number,
-        name: getusername.value,
+        // name: getusername.value,
         message: inputMessage.value,
     }
 
