@@ -82,7 +82,7 @@ function nextButton (event) {
     const username = document.querySelector("#username").value;
     const password = document.querySelector("#yourpassword").value;
 
-    const URL = "http://localhost:5000/login"
+    const URL = "https://cts-chat-app.herokuapp.com/login"
     axios
         .get(URL)
         .then(res =>checkUser (res, username, password));
@@ -98,7 +98,7 @@ function newMessage(event) {
         message: inputMessage.value,
     }
 
-    const URL = "http://localhost:5000/messages";
+    const URL = "https://cts-chat-app.herokuapp.com/messages";
         axios
             .post(URL, addMessage)
             .then(requestMessage);
@@ -147,6 +147,7 @@ function listallname (res) {
 function searchname () {
     let nameSkye = searchname.value.toLowerCase();
     let  allSkyeName  =document.querySelectorAll("li");
+
     for (let name of allSkyeName){
         let lisname = name.firstChild.textContent.toLowerCase();
         if (lisname.indexOf(nameSkye)===-1){
@@ -160,12 +161,12 @@ function searchname () {
 
 
 
-const URL = "http://localhost:5000/messages";
+const URL = "https://cts-chat-app.herokuapp.com/messages";
     axios
         .get(URL)
         .then(requestMessage);
     
-const url =  "http://localhost:5000/messages";
+const url =  "https://cts-chat-app.herokuapp.com/messages";
     axios
     .get(url)
     .then(listallname);
