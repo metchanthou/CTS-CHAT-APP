@@ -95,7 +95,7 @@ function newMessage(event) {
     let number = 7; 
     let addMessage = {
         id: number,
-        // name: getusername.value,
+        name: getusername.value,
         message: inputMessage.value,
     }
 
