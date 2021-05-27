@@ -48,12 +48,11 @@ body {
 
 /* -----------------part2----------------- */
 .part2 {
-    display: none;
     margin: auto;
     width: 45%;
     border: 3px solid #005792;
     padding: 10px;
-    display: none;
+    
 }
 
 
@@ -114,9 +113,6 @@ h5 {
     
 }
  /* -----------------part3-------------- */
-.part3 {
-    display: none;
-}
 
 .page3 {
     height: 100%;
@@ -129,7 +125,13 @@ h5 {
     overflow-x: hidden;
     padding-top: 20px;
     
-  };
+  }
+  #p-mess {
+     padding: 15px;
+     border-radius: 50px;
+      
+
+}
 
 .p1 img {
       border-radius: 50%;
@@ -157,7 +159,7 @@ h5 {
 }
 
  #search {
-     width: 350px;
+     width: 330px;
      height: 35px;
      border-radius: 8px;
      border: none;
@@ -180,8 +182,8 @@ h5 {
     margin: auto;
     width: 67%;
     padding: 20px; 
-    float: right;
-    /* position: fixed; */
+    /* float: right;
+    position: fixed; */
     /* z-index: 1;
     top: 0;
     left: 0; */
@@ -192,20 +194,14 @@ h5 {
     display: flex;
 }
 
- 
 
-#sticker,
-#camera,
-#enter,
-#chatting,
-#call,
-#contact,
-#add {
+.button,
+.send{
     cursor: pointer;
 }
 
 .send {
-  margin-top: 40%;  
+  margin-top: 45%;  
 } 
 
 .lists {
@@ -219,9 +215,8 @@ ul {
 li {
     display: flex;
     padding: 8px;
-    
-
 }
+
 .textname {
     background: #d37815;
     width: 60px;
@@ -246,8 +241,8 @@ li {
     font-size: 23px;
 }
 
-#mess {
-    color: #9096a7;
+#time {
+    margin-left: 85%;
 }
 
 
@@ -264,7 +259,7 @@ h5 {
     margin-top: 2%;
 }
 
-h2 {
+h1 {
     margin-top: -2px;
     color: #005792;
 }
@@ -273,12 +268,13 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-nav{
-    display: none;
+
+.sticker {
+    display: flex;
 }
-.emoji{font-family:segoe ui emoji;font-size:"1.5em"}
-
-
+#emoji {
+    font-size:2em;
+}
 
 
 

@@ -1,25 +1,22 @@
 [
-    {   "username": "Channary",
-        "password": "0000"  },
 
     {   "username": "Chanry",
-         "password": "1111" },
+         "password": "1111" ,
+         "color" : " brown"},
 
     {   "username": "Kunthy",
-         "password": "2222" },
-
-    {   "username": "Sinet",
-        "password": "3333"},
+         "password": "2222", 
+        "color": "orange"},
 
     {   "username": "Somphors", 
-        "password": "4444"},
+        "password": "4444",
+        "color": "purple"},
 
     {   "username": "Chanthou",
-        "password": "5555"},
+        "password": "5555",
+        "color": "tomato"},
 
     {   "username": "Davy",
-        "password": "6666"},
-
-    {   "username": "Sreysoy",
-        "password": "7777"}
+        "password": "6666",
+        "color": "green"}
 ]

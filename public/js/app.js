@@ -1,93 +1,35 @@
 
-
-function closePart1(event) {
-    event.preventDefault();
-
-    getpart1.style.display = "none";
-    getpart2.style.display = "block";
-};
-
-function notYet (event) {
-    event.preventDefault();
-
-    getpart1.style.display = "block";
-    getpart1.style.display = "flex";
-    getpart2.style.display = "none";
-    
-};
-
-function signButton (event) {
-    event.preventDefault();
-
-    const getfirst = document.querySelector("#first-name").value;
-    const getlast = document.querySelector("#last-name").value;
-    const getemail = document.querySelector("#email").value;
-    const getnewpass = document.querySelector("#newpass").value;
-    const getpersonal = document.querySelector("#personal");
-    getpersonal.textContent = getfirst;
-    
-
-    if (getfirst==="" || getlast==="" || getemail==="" || getnewpass===""){
-            confirm("Not yet to complet!")
-            return false
-    }
-    getpart3.style.display = "block";
-    getpart2.style.display = "none";
-};
-
 function requestMessage (res) {
-
     let data = res.data;
+    let hour = new Date();
+    let setTime = hour.toLocaleTimeString();
 
     const resiveChat = document.querySelector(".resive");
-    
     if (resiveChat !==null) {
         resiveChat.remove();
     };
-
     const newResive = document.createElement("div");
     newResive.classList.add("resive");
-
     for (let sms of data) {
+
         const resultChat = document.querySelector(".result");
         const p = document.createElement("p");
-        p.setAttribute("id", "p-mess")
+        const time = document.createElement("span");
+
+        p.setAttribute("id", "p-mess");
+        time.setAttribute("id", "time");
         p.textContent = sms.name+ ": " + sms.message;
+        p.style.color = "white"
+        p.style.background = sms.color;
+        time.textContent = setTime;
         newResive.appendChild(p);
-        resultChat.appendChild(newResive);
-        
-    }
-};
-
-function checkUser(res, username, password) {
-    let usernameData = res.data;
-
-    for (let name of usernameData) {
-        if (name.username === username && name.password ===password) {
-            getpart1.style.display = "none";
-            getpart3.style.display = "block";
-            
-        }else {
-            getText.textContent = "Username Not Found! Try again.";
-            getText.style.color = "red";
-        };
+        newResive.appendChild(time);
+        resultChat.appendChild(newResive);    
     };
 };
 
-
-function nextButton (event) {
-    event.preventDefault();
-    
-    const getpersonal = document.querySelector("#personal");
-    getpersonal.textContent = getusername.value;
-    const username = document.querySelector("#username").value;
-    const password = document.querySelector("#yourpassword").value;
-
-    const URL = "https://cts-chat-app.herokuapp.com/login"
-    axios
-        .get(URL)
-        .then(res =>checkUser (res, username, password));
-    
+function toChat () {
+    window.location.href = "http://localhost:5000/chat.html";
 };
 
 function newMessage(event) {
@@ -95,11 +37,11 @@ function newMessage(event) {
     let number = 7; 
     let addMessage = {
         id: number,
-        name: getusername.value,
+        name: "You",
         message: inputMessage.value,
     }
 
-    const URL = "https://cts-chat-app.herokuapp.com/messages";
+    const URL = "http://localhost:5000/messages";
         axios
             .post(URL, addMessage)
             .then(requestMessage);
@@ -107,11 +49,10 @@ function newMessage(event) {
 
 function listallname (res) {
     let users = res.data;
-    console.log(users)
     const getul = document.querySelector("ul");
-
+    
     for (let user of users){
-        const li = document.createElement("li");
+        const li = document.createElement("li"); 
         const textname = document.createElement('div');
         const inform= document.createElement('div');
         const br = document.createElement("br")
@@ -122,80 +63,87 @@ function listallname (res) {
 
         const label=document.createElement("span");
         const name=document.createElement("span");
-        const mess=document.createElement("span");
+    
 
         label.setAttribute("id","label");
         name.setAttribute("id","name");
-        mess.setAttribute("id", "mess");
-
-        label.textContent = user.name[0].toUpperCase();
-        name.textContent = user.name;
-        mess.textContent = user.message;
-
+        
+        label.textContent = user.username[0].toUpperCase();
+        name.textContent = user.username;
+        
         textname.appendChild(label);
         inform.appendChild(name);
         inform.appendChild(br);
-        inform.appendChild(mess);
-
+        
         li.appendChild(textname);
         li.appendChild(inform);
 
         getul.appendChild(li);
+
     };
     console.log(getul)
-};
+}; 
 
-function searchname () {
-    let nameSkye = searchname.value.toLowerCase();
-    let  allSkyeName  =document.querySelectorAll("li");
-
-    for (let name of allSkyeName){
-        let lisname = name.firstChild.textContent.toLowerCase();
-        if (lisname.indexOf(nameSkye)===-1){
+function searchName () {
+    let account = searchName.value.toLowerCase();
+    let  listAccount =document.querySelectorAll("li");
+    for (let name of listAccount){
+        let accounName = name.secondtChild.textContent.toLowerCase();
+        if (accounName.indexOf(account)===-1){
             name.style.display ="none";
         }else{
             name.style.display ="";
         }
     }
-    console.log(nameSkye)
-};
+    console.log(account)
+}
+
+function liststicker (res) {
+    let stickerData = res.data;
+    const sticker = document.querySelector(".sticker");
+    
+    for (let emoji of stickerData){
+            console.log(emoji.icon);
+            const p = document.createElement("p");
+            p.setAttribute("id", "emoji");
+            p.textContent = emoji.icon;
+            sticker.appendChild(p)
+    }
+}
 
 
 
-const URL = "https://cts-chat-app.herokuapp.com/messages";
+// const getYourname = document.querySelector("#personal");
+// getYourname.textContent =  JSON.parse(localStorage.getItem("username"));
+
+const URL1 = "http://localhost:5000/messages";
     axios
-        .get(URL)
+        .get(URL1)
         .then(requestMessage);
     
-const url =  "https://cts-chat-app.herokuapp.com/messages";
+const URL2 =  "http://localhost:5000/login";
     axios
-    .get(url)
+    .get(URL2)
     .then(listallname);
 
 
+const URl4 = "http://localhost:5000/emoji"
+    axios
+        .get(URl4)
+        .then(liststicker);
 
 
-const getpart1 = document.querySelector(".part1");
-const getpart2 = document.querySelector(".part2");
-const getpart3 = document.querySelector(".part3");
 const inputMessage = document.querySelector("#messages");
-const getText = document.querySelector("#text");
-const getusername = document.querySelector("#username");
-const getpassword = document.querySelector("#yourpassword");
-
-const btnCreate = document.querySelector("#create");
-const btnNotYet = document.querySelector("#not");
+const btnSitting = document.querySelector("#sitting");
 const btnSend = document.querySelector("#enter");
-const btnSign = document.querySelector("#sign-up");
-const btnNext = document.querySelector("#next");
-const searchBook =document.querySelector("#search");
+const btnSearch =document.querySelector("#search");
 
+    
 
-btnCreate.addEventListener("click", closePart1);
-btnNotYet.addEventListener("click", notYet);
+btnSearch.addEventListener("keyup", searchName);
 btnSend.addEventListener("click", newMessage);
-btnSign.addEventListener("click", signButton);
-btnNext.addEventListener("click", nextButton);
-searchBook.addEventListener('keyup', searchname);
+// btnSitting.addEventListener("click", sitting);
+
+
 
 
