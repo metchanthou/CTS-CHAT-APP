@@ -34,11 +34,13 @@ function toChat () {
 
 function newMessage(event) {
     event.preventDefault();
-    let number = 7; 
+
+    let user = localStorage.getItem("username");
+    let color = localStorage.getItem("color");
     let addMessage = {
-        id: number,
-        name: "You",
+        name: user,
         message: inputMessage.value,
+        color:color
     }
 
     const URL = "http://localhost:5000/messages";
@@ -88,7 +90,7 @@ function searchName () {
     let account = searchName.value.toLowerCase();
     let  listAccount =document.querySelectorAll("li");
     for (let name of listAccount){
-        let accounName = name.secondtChild.textContent.toLowerCase();
+        let accounName = name.after.fist.textContent.toLowerCase();
         if (accounName.indexOf(account)===-1){
             name.style.display ="none";
         }else{
@@ -112,9 +114,29 @@ function liststicker (res) {
 }
 
 
+//get profile image from user login
+function show(res ,username){
+    let image = res.data;
+    console.log(image)
+    for(let pf of image){
+        if(pf.username===username){
+            let im=document.createElement('img');
+            im.setAttribute("id", "yourpic")
+            im.src = pf.profile;
+            images.appendChild(im);
+            getUsername.textContent = pf.username;
+        }
+        console.log(pf)
 
-// const getYourname = document.querySelector("#personal");
-// getYourname.textContent =  JSON.parse(localStorage.getItem("username"));
+    }
+}
+
+function pfImage(){
+    let user = localStorage.getItem("username");
+    axios
+    .get("http://localhost:5000/login")
+    .then(res => show(res, user));
+};
 
 const URL1 = "http://localhost:5000/messages";
     axios
@@ -137,13 +159,12 @@ const inputMessage = document.querySelector("#messages");
 const btnSitting = document.querySelector("#sitting");
 const btnSend = document.querySelector("#enter");
 const btnSearch =document.querySelector("#search");
+const getUsername = document.querySelector("#personal");
 
-    
-
+const images = document.querySelector('.img');
 btnSearch.addEventListener("keyup", searchName);
 btnSend.addEventListener("click", newMessage);
-// btnSitting.addEventListener("click", sitting);
 
-
+pfImage();
 
 

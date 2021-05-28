@@ -22,21 +22,22 @@ function checkUser(res, username, password) {
             localStorage.setItem("color", name.color);
             isCheck = true
         };
-        console.log(name)
-    };
+
     if (!isCheck){
         getText.textContent = "Username Not Found! Try again.";
         getText.style.color = "red";
-    }
+    };
+    };
 };
 
 function signUp (event) {
     event.preventDefault();
-    window.location.href = "http://localhost:5000/signup.html"
-}
+    window.location.href = "http://localhost:5000/signup.html";
+};
 
 const btnNext = document.querySelector("#next");
 const btnCreate = document.querySelector("#create");
 
 btnCreate.addEventListener("click", signUp);
 btnNext.addEventListener("click", nextButton);
+

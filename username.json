@@ -2,21 +2,26 @@
 
     {   "username": "Chanry",
          "password": "1111" ,
-         "color" : " brown"},
-
+         "color" : " brown",
+        "profile":"img/img1.jpg"},
+        
     {   "username": "Kunthy",
          "password": "2222", 
-        "color": "orange"},
+        "color": "orange",
+        "profile":"img/img2.jpg"},
 
     {   "username": "Somphors", 
         "password": "4444",
-        "color": "purple"},
+        "color": "purple",
+        "profile":"img/img3.jpg"},
 
     {   "username": "Chanthou",
         "password": "5555",
-        "color": "tomato"},
+        "color": "tomato",
+        "profile":"img/img4.jpg"},
 
     {   "username": "Davy",
         "password": "6666",
-        "color": "green"}
+        "color": "green",
+        "profile":"img/img5.jpg"}
 ]
