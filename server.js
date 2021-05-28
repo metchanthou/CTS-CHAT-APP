@@ -11,9 +11,7 @@ app.use(express.urlencoded());
 app.use(express.static("public"));
 
 let messageData = [
-    {id:1, name: "Davy", message: "Hello", color: "teal"},
-    {id:1, name: "Vicheka", message: "Hello", color: "purple"},
-    {id:1, name: "Simeng", message: "Hello", color: "black"},
+    {name: "Davy", message: "Hello", color: "teal"},
 ];
 
 let stickers = [

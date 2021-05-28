@@ -14,11 +14,11 @@ function signButton (event) {
     toChat();
 };
 function toChat () {
-    window.location.href = "https://cts-chat-app.herokuapp.com/chat.html"
+    window.location.href = "http://localhost:5000/chat.html"
 }
 
 function notYet () {
-    window.location.href = "https://cts-chat-app.herokuapp.com/index.html"
+    window.location.href = "http://localhost:5000/index.html"
 }
 
 const btnNotYet = document.querySelector("#not");

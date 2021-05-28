@@ -29,7 +29,7 @@ function requestMessage (res) {
 };
 
 function toChat () {
-    window.location.href = "https://cts-chat-app.herokuapp.com/chat.html";
+    window.location.href = "http://localhost:5000/chat.html";
 };
 
 function newMessage(event) {
@@ -43,7 +43,7 @@ function newMessage(event) {
         color:color
     }
 
-    const URL = "https://cts-chat-app.herokuapp.com/messages";
+    const URL = "http://localhost:5000/messages";
         axios
             .post(URL, addMessage)
             .then(requestMessage);
@@ -134,22 +134,22 @@ function show(res ,username){
 function pfImage(){
     let user = localStorage.getItem("username");
     axios
-    .get("https://cts-chat-app.herokuapp.com/login")
+    .get("http://localhost:5000/login")
     .then(res => show(res, user));
 };
 
-const URL1 = "https://cts-chat-app.herokuapp.com/messages";
+const URL1 = "http://localhost:5000/messages";
     axios
         .get(URL1)
         .then(requestMessage);
     
-const URL2 =  "https://cts-chat-app.herokuapp.com/login";
+const URL2 =  "http://localhost:5000/login";
     axios
     .get(URL2)
     .then(listallname);
 
 
-const URl4 = "https://cts-chat-app.herokuapp.com/emoji"
+const URl4 = "http://localhost:5000/emoji"
     axios
         .get(URl4)
         .then(liststicker);
