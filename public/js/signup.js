@@ -6,19 +6,37 @@ function signButton (event) {
     const getlast = document.querySelector("#last-name").value;
     const getemail = document.querySelector("#email").value;
     const getnewpass = document.querySelector("#newpass").value;
-   
-    if (getfirst==="" || getlast==="" || getemail==="" || getnewpass===""){
+    const getColor = document.querySelector("#colors").value;
+    let images = "img/new_account"
+
+    console.log(getColor)
+    
+    // ____________________Condition when you create new account   
+    if (getfirst==="" || getlast==="" || getemail==="" || getnewpass==="" || getColor ===""){
             confirm("Not yet to complet!")
             return false
     }
+    let newUsername ={
+        username: getfirst,
+        password: getnewpass,
+        color: getColor,
+        profile: images,
+    };
+    let url = "https://cts-chat-app.herokuapp.com/login";
+        axios
+            .post(url, newUsername)
+            .then(notYet)
     toChat();
+    localStorage.setItem("username", getfirst);
+    localStorage.setItem("color", getColor);
+    localStorage.setItem("img", images)
 };
 function toChat () {
-    window.location.href = "http://localhost:5000/chat.html"
+    window.location.href = "https://cts-chat-app.herokuapp.com/chat.html";
 }
 
 function notYet () {
-    window.location.href = "http://localhost:5000/index.html"
+    window.location.href = "https://cts-chat-app.herokuapp.com/index.html"
 }
 
 const btnNotYet = document.querySelector("#not");

@@ -13,7 +13,7 @@
     {   "username": "Somphors", 
         "password": "4444",
         "color": "purple",
-        "profile":"img/img3.jpg"},
+        "profile":"img/img3.png"},
 
     {   "username": "Chanthou",
         "password": "5555",
@@ -23,5 +23,15 @@
     {   "username": "Davy",
         "password": "6666",
         "color": "green",
-        "profile":"img/img5.jpg"}
+        "profile":"img/img5.jpg"},
+
+    {   "username": "Vicheka",
+        "password": "7777",
+        "color": "blue",
+        "profile":"img/img6.jpg"},
+
+    {   "username": "Simeng",
+        "password": "8888",
+        "color": "gray",
+        "profile":"img/img7.jpg"}
 ]

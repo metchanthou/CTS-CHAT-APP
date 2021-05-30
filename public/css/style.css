@@ -51,17 +51,14 @@ body {
     margin: auto;
     width: 45%;
     border: 3px solid #005792;
-    padding: 10px;
-    
+    padding: 10px;    
 }
 
 
 #logo{
     margin-left: 40%;
 }
-.input1{
-    margin-top: 5%;
-}
+
 h5 {
     text-align: center;
     font-size: 30px;
@@ -89,12 +86,9 @@ h5 {
     margin-left: 5%;
 }
 
-
-
 .new {
     margin-top: 5%;
     margin-left: 5%;
-    
 
 }
 #sign-up{
@@ -112,6 +106,13 @@ h5 {
     background: coral;
     
 }
+
+.color {
+    margin-left: 5%;
+}
+#colors {
+    width: 500px;
+}
  /* -----------------part3-------------- */
 
 .page3 {
@@ -126,11 +127,12 @@ h5 {
     padding-top: 20px;
     
   }
+  
   #p-mess {
-     padding: 15px;
+     padding: 10px;
      border-radius: 50px;
-      
-
+     max-width: max-content;
+    
 }
 
 .p1 img {
@@ -148,10 +150,7 @@ h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#sitting {
-    float: right;
-    margin-top: -40%;
-}
+
 
 .search-container {
     margin-top: 20px;
@@ -182,11 +181,6 @@ h5 {
     margin: auto;
     width: 67%;
     padding: 20px; 
-    /* float: right;
-    position: fixed; */
-    /* z-index: 1;
-    top: 0;
-    left: 0; */
     margin-left: 30%;
  }
 
@@ -200,9 +194,7 @@ h5 {
     cursor: pointer;
 }
 
-.send {
-  margin-top: 45%;  
-} 
+
 
 .lists {
     margin-left: -7%;
@@ -274,6 +266,39 @@ h1 {
     font-size:2em;
 }
 
+
+#underline,
+#bold,
+#italic {
+
+    cursor: pointer;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    border: 3px solid #005792;
+    font-weight: bolder;
+    background: none;
+    
+}
+
+.active {
+
+    color: red;
+    background: chocolate;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
 
 
 
