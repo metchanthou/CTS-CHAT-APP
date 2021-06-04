@@ -1,37 +1,44 @@
 [
-
-    {   "username": "Chanry",
-         "password": "1111" ,
-         "color" : " brown",
-        "profile":"img/img1.jpg"},
-        
-    {   "username": "Kunthy",
-         "password": "2222", 
+    {
+        "username": "Chanry",
+        "password": "1111",
+        "color": " brown",
+        "profile": "img/img1.jpg"
+    },
+    {
+        "username": "Kunthy",
+        "password": "2222",
         "color": "orange",
-        "profile":"img/img2.jpg"},
-
-    {   "username": "Somphors", 
+        "profile": "img/img2.jpg"
+    },
+    {
+        "username": "Somphors",
         "password": "4444",
         "color": "purple",
-        "profile":"img/img3.png"},
-
-    {   "username": "Chanthou",
+        "profile": "img/img3.png"
+    },
+    {
+        "username": "Chanthou",
         "password": "5555",
         "color": "tomato",
-        "profile":"img/img4.jpg"},
-
-    {   "username": "Davy",
+        "profile": "img/img4.jpg"
+    },
+    {
+        "username": "Davy",
         "password": "6666",
         "color": "green",
-        "profile":"img/img5.jpg"},
-
-    {   "username": "Vicheka",
+        "profile": "img/img5.jpg"
+    },
+    {
+        "username": "Vicheka",
         "password": "7777",
         "color": "blue",
-        "profile":"img/img6.jpg"},
-
-    {   "username": "Simeng",
+        "profile": "img/img6.jpg"
+    },
+    {
+        "username": "Simeng",
         "password": "8888",
         "color": "gray",
-        "profile":"img/img7.jpg"}
+        "profile": "img/img7.jpg"
+    }
 ]

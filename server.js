@@ -17,10 +17,18 @@ app.get("/messages", (req, res) => {
 app.get("/login", (req, res) => {
     res.send(getUserName);
 });
+
+app.post("/login", (req, res) =>{
+    let newaccount = req.body;
+    getUserName.push(newaccount);
+    res.send(getUserName);
+    fs.writeFileSync("username.json", JSON.stringify(getUserName));
+    
+})
 app.post("/messages", (req, res) =>{
     let  getMessage = req.body;
     dataMessage.push(getMessage);
     res.send(dataMessage);
-    fs.writeFileSync("messageData.json", JSON.stringify(dataMessage))
+    fs.writeFileSync("messageData.json", JSON.stringify(dataMessage));
 });
 

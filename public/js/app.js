@@ -6,9 +6,7 @@ function requestMessage(res) {
     let data = res.data;
     console.log(data)
 
-    // -----Set time-----
-    let hour = new Date();
-    let setTime = hour.toLocaleTimeString();
+
 
     // -----get div receive -----
     const resiveChat = document.querySelector(".resive");
@@ -29,7 +27,7 @@ function requestMessage(res) {
         p.textContent = sms.name + ": " + sms.message;
         p.style.background = sms.color;
         p.style.color = "white"
-        time.textContent = setTime;
+        time.textContent = sms.time;
         newResive.appendChild(p);
         newResive.appendChild(time);
         resultChat.appendChild(newResive);
@@ -42,16 +40,22 @@ function requestMessage(res) {
 // -----------------------------------------------???-------------------------------------------------//
 function sendMessage(event) {
     event.preventDefault();
+
     let getSound = document.querySelector("#myAudio");
     getSound.play();
     let user = localStorage.getItem("username");
     let color = localStorage.getItem("color");
+
+    // -----Set time-----
+    let hour = new Date();
+    let setTime = hour.toLocaleTimeString();
     let addMessage = {
         name: user,
         message: inputMessage.value,
-        color: color
+        color: color,
+        time: setTime
     }
-    const URL = "https://cts-chat-app.herokuapp.com/messages";
+    const URL = "http://localhost:5000/messages";
     axios
         .post(URL, addMessage)
         .then(res =>{
@@ -153,15 +157,15 @@ btnSearch.addEventListener("keyup", function(event){
 });
 
 function toChat() {
-    window.location.href = "https://cts-chat-app.herokuapp.com/chat.html";
+    window.location.href = "http://localhost:5000/chat.html";
 };
 
-const URL1 = "https://cts-chat-app.herokuapp.com/messages";
+const URL1 = "http://localhost:5000/messages";
 axios
     .get(URL1)
     .then(requestMessage);
 
-const URL2 = "https://cts-chat-app.herokuapp.com/login";
+const URL2 = "http://localhost:5000/login";
 axios
     .get(URL2)
     .then(listallname);
