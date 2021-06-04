@@ -22,7 +22,7 @@ function signButton (event) {
         color: getColor,
         profile: images,
     };
-    let url = "http://localhost:5000/login";
+    let url = "https://cts-chat-app.herokuapp.com/login";
         axios
             .post(url, newUsername)
             .then(notYet)
@@ -32,11 +32,11 @@ function signButton (event) {
     localStorage.setItem("img", images)
 };
 function toChat () {
-    window.location.href = "http://localhost:5000/chat.html";
+    window.location.href = "https://cts-chat-app.herokuapp.com/chat.html";
 }
 
 function notYet () {
-    window.location.href = "http://localhost:5000/index.html"
+    window.location.href = "https://cts-chat-app.herokuapp.com/index.html"
 }
 
 const btnNotYet = document.querySelector("#not");

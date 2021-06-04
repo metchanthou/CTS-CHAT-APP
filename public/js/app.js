@@ -55,7 +55,7 @@ function sendMessage(event) {
         color: color,
         time: setTime
     }
-    const URL = "http://localhost:5000/messages";
+    const URL = "https://cts-chat-app.herokuapp.com/messages";
     axios
         .post(URL, addMessage)
         .then(res =>{
@@ -157,15 +157,15 @@ btnSearch.addEventListener("keyup", function(event){
 });
 
 function toChat() {
-    window.location.href = "http://localhost:5000/chat.html";
+    window.location.href = "https://cts-chat-app.herokuapp.com/chat.html";
 };
 
-const URL1 = "http://localhost:5000/messages";
+const URL1 = "https://cts-chat-app.herokuapp.com/messages";
 axios
     .get(URL1)
     .then(requestMessage);
 
-const URL2 = "http://localhost:5000/login";
+const URL2 = "https://cts-chat-app.herokuapp.com/login";
 axios
     .get(URL2)
     .then(listallname);
